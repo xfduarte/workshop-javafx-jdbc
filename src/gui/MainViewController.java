@@ -36,7 +36,7 @@ public class MainViewController implements Initializable{
 	
 	@FXML
 	public void onMenuItemDepartmentAction() {
-		loadView("/gui/departmentList.fxml",(DepartmentListViewController controller) -> {
+		loadView("/gui/departmentList.fxml",(DepartmentListController controller) -> {
 			controller.setDepartmentService(new DepartmentService());
 			controller.updateTableView();
 		});
